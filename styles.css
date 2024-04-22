@@ -1,0 +1,74 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, footer {
+    background: #20232a;
+    color: #61dafb;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header a, footer a {
+    color: #61dafb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Flexbox for navigation and footer */
+nav ul, footer div {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul, footer div {
+        flex-direction: column;
+    }
+}
+
+/* Project cards and contact form */
+.card {
+    background: #f0f0f0;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #61dafb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
